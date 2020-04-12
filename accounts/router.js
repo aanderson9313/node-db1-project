@@ -1,4 +1,4 @@
-const express = require('./node_modules/express');
+const express = require('express');
 
 const db = require('../data/dbConfig');
 
@@ -20,6 +20,7 @@ router.get('/', (req, res) => {
             )
         });
 });
+// working
 
 router.get('/:id', (req, res) => {
     const { id } = req.params
@@ -43,6 +44,7 @@ router.get('/:id', (req, res) => {
             )
         });
 });
+// working
 
 // POST, PUT
 router.post('/', (req, res) => {
@@ -61,6 +63,7 @@ router.post('/', (req, res) => {
             )
         });
 });
+// working
 
 router.put('/:id', (req, res) => {
     const body = req.body
@@ -85,6 +88,7 @@ router.put('/:id', (req, res) => {
             )
         });
 });
+// working
 
 
 // DELETE
@@ -105,5 +109,6 @@ router.delete('/:id', (req, res) => {
             )
         });
 });
+// working
 
 module.exports = router;
